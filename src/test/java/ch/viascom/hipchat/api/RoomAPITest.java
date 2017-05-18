@@ -58,7 +58,7 @@ public class RoomAPITest {
     //@Test
     public void addMemberTest() throws APIException {
         HipChat hipChat = new HipChat(clientToken);
-        hipChat.roomsAPI().addMember(new AddMember(testBotUserId, "Private-Test-Room", null));
+        hipChat.roomsAPI().addMember(new AddMember(String.valueOf(testBotUserId), "Private-Test-Room", null));
     }
 
     //@Test

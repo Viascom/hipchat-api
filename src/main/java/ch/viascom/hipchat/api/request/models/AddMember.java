@@ -15,8 +15,8 @@ import java.util.ArrayList;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AddMember {
-    private int userId;
-    private String roomId;
+    private transient String userId;
+    private transient String roomId;
     @SerializedName("room_roles")
     private ArrayList<UserRole> roomRoles;
 }

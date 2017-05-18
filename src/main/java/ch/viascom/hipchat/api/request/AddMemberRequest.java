@@ -21,10 +21,7 @@ public class AddMemberRequest extends PutRequest<NoContentResponse> {
 
     @Override
     protected String getJsonBody() {
-        String json = JsonUtil.getJsonBody(addMember);
-        // replace second query field
-        json = json.replaceAll("\"userId\"\\:[^\\,\\}]*,", "");
-        return json;
+        return JsonUtil.getJsonBody(addMember);
     }
 
     @Override

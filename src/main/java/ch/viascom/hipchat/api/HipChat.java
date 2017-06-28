@@ -62,8 +62,8 @@ public class HipChat {
 
 
     public HipChat(String accessToken, String baseUrl) {
-        setAccessToken(accessToken);
         setBaseUrl(baseUrl);
+        setAccessToken(accessToken);
     }
 
     public HipChat setBaseUrl(String baseUrl) {
